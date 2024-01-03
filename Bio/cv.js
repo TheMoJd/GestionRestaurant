@@ -21,11 +21,21 @@ Vue.component('project-item', {
     }
 });
 
-new Vue({
-    el: '#app',
+new Vue ({
+    el: '#intro',
     data: {
         name: 'Moetez JAOUED',
         introduction: 'Future millionnaire et chasseur de dragons professionels.',
+        personalImage: 'C:/Users/jaoue/Téléchargements/Harvey.jpg'
+    }
+
+});
+
+
+new Vue({
+    el: '#app',
+    data: {
+
         skills: ['Programmation', 'Vente', 'Management de projet', 'Tuer des dragons', 'Sauver des princesses'],
         projects: [
             { name: 'Project 1', description: 'Description of Project 1' },
@@ -34,6 +44,8 @@ new Vue({
         contact: {
             email: 'jaouedmoetaz@gmail.com',
             linkedin: 'https://www.linkedin.com/in/your-linkedin-profile'
-        }
+        },
+
+        backgroundImage: 'path/to/your/image.jpg'
     }
 });

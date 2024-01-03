@@ -14,6 +14,15 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#intro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
     color: #333;
 }
@@ -50,4 +59,17 @@ li {
 /* Ajoutez le style pour la rotation de la flèche lorsqu'elle est cliquée */
 .fa-chevron-up {
     transform: rotate(180deg);
+}
+
+
+/* Ajoutez le style pour l'image personnelle */
+.personal-image {
+    width: 150px; /* Ajustez la largeur selon vos préférences */
+    border-radius: 50%; /* Pour une image ronde, vous pouvez ajuster la valeur selon vos préférences */
+}
+
+/* Ajoutez du style pour le contenu à côté de l'image */
+#app {
+    display: flex;
+    flex-direction: column;
 }
