@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    color: #777;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Style pour la flèche */
+.toggle-arrow {
+    cursor: pointer;
+}
+
+/* Ajoutez le style pour le texte de la flèche */
+.toggle-arrow i {
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ajoutez le style pour la rotation de la flèche lorsqu'elle est cliquée */
+.fa-chevron-up {
+    transform: rotate(180deg);
+}

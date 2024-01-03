@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Bio Webpage</title>
+    <!-- Add a link to your CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+<div id="app">
+    <h1>{{ name }}</h1>
+    <p>{{ introduction }}</p>
+
+    <h2>Skills</h2>
+    <!-- Itérer sur la liste des compétences -->
+    <ul>
+        <li v-for="skill in skills">{{ skill }}</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <!-- Itérer sur la liste des projets avec le composant project-item -->
+    <ul>
+        <li>
+            <project-item v-for="project in projects" :key="project.name" :name="project.name" :description="project.description"></project-item>
+        </li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: {{ contact.email }}</p>
+    <p>LinkedIn: <a :href="contact.linkedin">{{ contact.linkedin }}</a></p>
+</div>
+
+<!-- Add a link to your Vue.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="cv.js"></script>
+</body>
+</html>
