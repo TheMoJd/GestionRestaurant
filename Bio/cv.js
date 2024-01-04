@@ -46,6 +46,6 @@ new Vue({
             linkedin: 'https://www.linkedin.com/in/your-linkedin-profile'
         },
 
-        backgroundImage: 'path/to/your/image.jpg'
+        backgroundImage: 'C:/Users/jaoue/Downloads/Harvey.jpg'
     }
 });

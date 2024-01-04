@@ -1,4 +1,7 @@
 body {
+    background-image: url("C:/Users/jaoue/Downloads/Harvey.jpg");
+    background-size: cover; /* Adjust the background size as needed */
+
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
     margin: 0;
